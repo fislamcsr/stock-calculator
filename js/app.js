@@ -58,7 +58,7 @@ function calculate() {
 	document.getElementById('purchase_value').innerText = format(purchase_value);
 
 	var purchase_brokerage_fee = purchase_value * brokerage_fee_percentage / 100;
-	document.getElementById('purchase_brokerage_fee_rate_label').innerText = purchase_brokerage_fee < brokerage_fee_min ? brokerage_fee_percentage.toFixed(2) + "%=" + purchase_brokerage_fee + " Minimum: " + brokerage_fee_min : brokerage_fee_percentage.toFixed(2) + '%';
+	document.getElementById('purchase_brokerage_fee_rate_label').innerText = purchase_brokerage_fee < brokerage_fee_min ? brokerage_fee_percentage.toFixed(2) + "%=" + format(purchase_brokerage_fee) + " Minimum: " + brokerage_fee_min : brokerage_fee_percentage.toFixed(2) + '%';
 
 	purchase_brokerage_fee = purchase_brokerage_fee < brokerage_fee_min ? brokerage_fee_min : purchase_brokerage_fee;
 	document.getElementById('purchase_brokerage_fee').innerText = format(purchase_brokerage_fee);
@@ -79,7 +79,7 @@ function calculate() {
 	document.getElementById('sales_brokerage_fee_rate_label').innerText = brokerage_fee_percentage.toFixed(2) + '%';
 
 	var sales_brokerage_fee = sales_value * brokerage_fee_percentage / 100;
-	document.getElementById('sales_brokerage_fee_rate_label').innerText = sales_brokerage_fee < brokerage_fee_min ? brokerage_fee_percentage.toFixed(2) + "%=" + sales_brokerage_fee + " Minimum: " + brokerage_fee_min : brokerage_fee_percentage.toFixed(2) + '%';
+	document.getElementById('sales_brokerage_fee_rate_label').innerText = sales_brokerage_fee < brokerage_fee_min ? brokerage_fee_percentage.toFixed(2) + "%=" + format(sales_brokerage_fee) + " Minimum: " + brokerage_fee_min : brokerage_fee_percentage.toFixed(2) + '%';
 
 	sales_brokerage_fee = sales_brokerage_fee < brokerage_fee_min ? brokerage_fee_min : sales_brokerage_fee;
 
@@ -108,7 +108,7 @@ function calculate() {
 	document.getElementById('net_sales_proceeds').innerText = format(net_sales_proceeds);
 
 	var pl_amount = net_sales_proceeds - total_purchase_cost;
-	var color = pl_amount > 0 ? "#09fd27" : "red";
+	var color = pl_amount > 0 ? "#09fd27" : "deeppink";
 	var pl_amount_node = document.getElementById('pl_amount');
 	pl_amount_node.style.color = color;
 	pl_amount_node.innerText = format(pl_amount);

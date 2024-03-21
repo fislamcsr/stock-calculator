@@ -1,9 +1,21 @@
+// Change this to your repository name
+var GHPATH = '/stock-calculator';
+ 
+// Choose a different app prefix name
+var APP_PREFIX = 'gppwa_';
+ 
+// The version of the cache. Every time you change any of the files
+// you need to change this version (version_01, version_02…). 
+// If you don't change the version, the service worker will give your
+// users the old files!
+var VERSION = 'version_1';
+
 const stockCalculator = "stock-calculator-v1"
 const assets = [
-  "/",
-  "/index.html",
-  "/css/style.css",
-  "/js/app.js",
+  `${GHPATH}/`,
+  `${GHPATH}/index.html`,
+  `${GHPATH}/css/styles.css`,
+  `${GHPATH}/js/app.js`
 ]
 
 self.addEventListener("install", installEvent => {

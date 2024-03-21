@@ -79,7 +79,7 @@ and (-webkit-device-pixel-ratio: 3) {
   input {
     font: inherit;
     font-size: 1.5rem;
-    width: 170px;
+    width: 160px;
     border-radius: 20px;
     border: none;
     padding: 0.2em 0.5em;

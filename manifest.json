@@ -3,8 +3,8 @@
   "short_name": "Stock Calculator",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#fdfdfd",
-  "theme_color": "#db4938",
+  "background_color": "#1e90ff",
+  "theme_color": "#ff1493",
   "orientation": "portrait-primary",
   "icons": [
     {

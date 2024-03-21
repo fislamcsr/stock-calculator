@@ -21,6 +21,18 @@
   <title>Stock Calculator</title>
 </head>
 <body>
+  <span id="info"></span>
+  <script type="text/javascript">
+   function updateInfo() {
+     var info = "";
+      info += "document.documentElement.clientWidth: " + document.documentElement.clientWidth + ", ";
+      info += "screen.width: " + screen.width + ", ";
+      info += "window.innerWidth: " + window.innerWidth + ", ";
+      info += "screen.availWidth: " + screen.availWidth + ", ";
+      info += "screen.pixelDepth: " + screen.pixelDepth + ", ";
+      document.getElementById('info').innerText = info;
+    }();
+  </script>
   <main>
     <div class="container">
       <div class="fieldset">

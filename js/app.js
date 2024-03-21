@@ -1,12 +1,3 @@
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function() {
-    navigator.serviceWorker
-      .register("/stock-calculator/serviceWorker.js")
-      .then(res => console.log("service worker registered"))
-      .catch(err => console.log("service worker not registered", err))
-  })
-}
-
 function calculate() {
 	var lot = document.getElementById('lot').value;
 	var purchase_price = document.getElementById('purchase_price').value;

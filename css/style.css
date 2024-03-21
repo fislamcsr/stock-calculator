@@ -1,1 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: dodgerblue linear-gradient(22deg, aqua, dodgerblue, deeppink) fixed;
+  /*background: #05BFDB linear-gradient(22deg, #05BFDB, #088395, #00FFCA) fixed;*/
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font: normal 20px/1.6 system-ui, sans-serif;
+  text-shadow: 0 1px 1px hsl(0 0% 0% / 20%);
+  margin: 3rem;
+}
+main {
+  margin: auto;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin-right: 1rem;
+}
+
+.header {
+  color: #e74c3c;
+  margin-bottom: 0.5rem;
+}
+
+.fieldset {
+  text-align: center;
+}
+
+.field {
+  margin-bottom: 10px;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+label {
+  display: inline-block;
+  width: 300px;
+  text-align: left;
+}
+
+input {
+  font: inherit;
+  font-size: 1.5rem;
+  width: 210px;
+  border-radius: 20px;
+  border: none;
+  padding: 0.2em 0.5em;
+}
+
+@media only screen 
+and (width: 430px) 
+and (height: 932px) 
+and (-webkit-device-pixel-ratio: 3) {
+  label {
+    display: inline-block;
+    width: unset;
+  }
+
+  input {
+    font: inherit;
+    font-size: 1.5rem;
+    width: 170px;
+    border-radius: 20px;
+    border: none;
+    padding: 0.2em 0.5em;
+  }
+}
+
+.calculate_btn {
+  border: 0;
+  line-height: 1;
+  padding: -1px 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+  width: 20rem;
+  height: 3.2rem;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(5 100 50 / 100%);
+  background-image: linear-gradient(
+    to top left,
+    rgb(0 0 0 / 20%),
+    rgb(0 0 0 / 20%) 30%,
+    rgb(0 0 0 / 0%)
+  );
+  box-shadow:
+  inset 2px 2px 3px rgb(255 255 255 / 60%),
+  inset -2px -2px 3px rgb(0 0 0 / 60%);
+}
+
+.calculate_btn:hover {
+  background-color: rgb(10 120 50 / 100%);
+}
+
+.calculate_btn:active {
+  box-shadow:
+  inset -2px -2px 3px rgb(255 255 255 / 60%),
+  inset 2px 2px 3px rgb(0 0 0 / 60%);
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  td {
+    font-family: "Nunito", sans-serif;
+    font: normal 15px/1.6 system-ui, sans-serif;
+    padding: 0.25rem 0;
+    text-align: left;
+    border-bottom: 1px solid #E0DFDF;
+    white-space: nowrap;
+  }
+  td {
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
 

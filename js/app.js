@@ -30,8 +30,8 @@ function calculate() {
 		brokerage_fee_percentage = 0.05;
 		brokerage_fee_min = 8;
 		break;
-	case "0.20% Min: 12":
-		brokerage_fee_percentage = 0.20;
+	case "0.10% Min: 12":
+		brokerage_fee_percentage = 0.10;
 		brokerage_fee_min = 12;
 		break;
 	case "0.15% Min: 14":
